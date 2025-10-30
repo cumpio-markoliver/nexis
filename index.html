@@ -343,16 +343,17 @@
             left: 0;
             height: 100vh;
             width: var(--sidebar-width);
-            background: rgba(255, 255, 255, 0.15);
-            backdrop-filter: blur(20px);
+            background: rgba(255, 255, 255, 0.08); /* More transparent */
+            backdrop-filter: blur(25px) saturate(120%); /* Softer glass effect */
             color: var(--dark-blue);
             transition: all var(--transition-speed) ease;
             z-index: 100;
-            box-shadow: 5px 0 25px rgba(0,0,0,0.05);
+            box-shadow: 5px 0 20px rgba(0, 0, 0, 0.05);
             display: flex;
             flex-direction: column;
-            border-right: 1px solid rgba(255,255,255,0.2);
+            border-right: 1px solid rgba(255, 255, 255, 0.15);
         }
+
         
         .sidebar.collapsed {
             width: var(--sidebar-collapsed);
@@ -572,8 +573,8 @@
         }
         
         .content-header {
-            background: rgba(255,255,255,0.7);
-            backdrop-filter: blur(15px);
+            background: rgba(255, 255, 255, 0.3);
+            backdrop-filter: blur(15px) saturate(120%);
             padding: 2rem;
             box-shadow: 0 2px 20px rgba(0,0,0,0.05);
             display: flex;
@@ -620,8 +621,8 @@
         }
         
         .stat-card {
-            background: rgba(255, 255, 255, 0.6);
-            backdrop-filter: blur(15px);
+            background: rgba(255, 255, 255, 0.3);
+            backdrop-filter: blur(15px) saturate(120%);
             border-radius: 20px;
             padding: 2rem;
             text-align: center;
@@ -684,8 +685,8 @@
         
         /* Room Overview */
         .room-overview {
-            background: rgba(255, 255, 255, 0.5);
-            backdrop-filter: blur(15px);
+            background: rgba(255, 255, 255, 0.3);
+            backdrop-filter: blur(15px) saturate(120%);
             border-radius: 20px;
             padding: 2rem;
             margin-top: 2rem;
@@ -711,8 +712,9 @@
         }
         
         .room-card {
-            background: rgba(255, 255, 255, 0.7);
-            border-radius: 16px;
+            background: rgba(255, 255, 255, 0.3);
+            backdrop-filter: blur(15px) saturate(120%);
+            border-radius: 20px;
             padding: 1.5rem;
             text-align: center;
             transition: all 0.4s ease;
@@ -759,8 +761,8 @@
         
         /* Search and Filter */
         .search-section {
-            background: rgba(255, 255, 255, 0.5);
-            backdrop-filter: blur(15px);
+            background: rgba(255, 255, 255, 0.3);
+            backdrop-filter: blur(15px) saturate(120%);
             border-radius: 20px;
             padding: 2rem;
             margin-bottom: 2.5rem;
@@ -793,8 +795,8 @@
         
         /* Results Table */
         .results-section {
-            background: rgba(255, 255, 255, 0.5);
-            backdrop-filter: blur(15px);
+            background: rgba(255, 255, 255, 0.3);
+            backdrop-filter: blur(15px) saturate(120%);
             border-radius: 20px;
             padding: 2rem;
             max-height: 600px;
@@ -884,8 +886,8 @@
         
         /* Enhanced Activity Log */
         .activity-log {
-            background: rgba(255, 255, 255, 0.5);
-            backdrop-filter: blur(15px);
+            background: rgba(255, 255, 255, 0.3);
+            backdrop-filter: blur(15px) saturate(120%);
             border-radius: 20px;
             padding: 2rem;
             margin-top: 2rem;
